@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Card Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <div class="container">
+      <div class="left">
+        <div class="front">
+          <div class="circles">
+            <div class="biggerCircle"></div>
+            <div class="smallerCircle"></div>
+          </div>
+          <div class="numberDetails">
+            <div>
+              <span class="cardNum">0</span>
+              <span class="cardNum">0</span>
+              <span class="cardNum">0</span>
+              <span class="cardNum">0</span>
+            </div>
+            <div>
+              <span class="cardNum">0</span>
+              <span class="cardNum">0</span>
+              <span class="cardNum">0</span>
+              <span class="cardNum">0</span>
+            </div>
+            <div>
+              <span class="cardNum">0</span>
+              <span class="cardNum">0</span>
+              <span class="cardNum">0</span>
+              <span class="cardNum">0</span>
+            </div>
+            <div>
+              <span class="cardNum">0</span>
+              <span class="cardNum">0</span>
+              <span class="cardNum">0</span>
+              <span class="cardNum">0</span>
+            </div>
+          </div>
+          <div class="ownerDetails">
+            <span class="nameOnCard">Name</span>
+            <div class="dateOC">
+              <span class="monthOnCard">00</span>/<span class="yearOnCard">00</span>
+            </div>
+            
+          </div>
+        </div>
+        <div class="back">
+          <p class="cvvOnCard">000</p>
+        </div>
+      </div>
+      <div class="cardDetails">
+        <div class="cardContainer activeContainer">
+          <div class="name">
+            <h4>Card Name</h4>
+            <input type="text" placeholder="Card Name" class="nameInput" maxlength="10">
+            <p class="error"></p>
+          </div>
+          <div class="number">
+            <h4> Card Number</h4>
+            <input type="text" placeholder="Card Number" class="num" maxlength="16">
+            <p class="error"></p>
+          </div>
+          <div class="others">
+            <div class="date">
+              <h4>Exp.Date (MM/YY)</h4>
+              <input type="text" placeholder="MM" class="month" maxlength="2">
+              <input type="text" placeholder="YY" class="year" maxlength="2">
+            </div>
+            <div class="cvv">
+              <h4>CVV</h4>
+              <input type="text" placeholder="CVV" class="cvv cvvIp" maxlength="3" >
+            </div>
+          </div>
+          <div class="number">
+            <h4> Amount(In Rupees)</h4>
+            <input type="text" placeholder="Amount To Be Donated" class="num" maxlength="8">
+            <p class="error"></p>
+          </div>
+          <div style="display:flex;">
+            <p style="width:50%" class="error"></p>
+            <p  class="error"></p>
+          </div>
+          <div class="btn conf">Confirm</div>
+        </div>
+        <div class="thankYouContainer">
+          <img src="./images/icon-complete.svg" alt="">
+          <h1>Thank You!</h1>
+          <p>Your Donation Has Been Done!</p>
+          <div class="btn conti">Continue</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
