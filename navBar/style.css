@@ -1,0 +1,71 @@
+*,*::after,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.lgDisplay{
+    width:100vw;
+    background-color:rgba(134, 134, 191, 0.532) ;
+    display:flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-around;
+    color:white
+}
+
+.lgList{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    color: white;
+    gap:0.5rem
+}
+
+.lgList li{
+    cursor: pointer;
+    transition: all 0.5s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.lgList li:hover{
+    background-color: white;
+    color:black;
+}
+.toggleBtn{
+    display: none;
+}
+@media screen and (max-width:600px) {
+    .toggleBtn{
+        display: block;
+    }
+    .lgList{
+        display: none;
+    }
+    .lgDisplay{
+        justify-content: space-between;
+        background:none;
+        align-items: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 6vh;
+        background-color: rgb(127, 127, 156);
+        transition: height 700ms ease-in;
+    }
+    .smDisplay{
+        list-style: none;
+        display: flex;
+        opacity: 1%;
+        flex-direction: column;
+        gap: 0.5rem;
+        transition: all 500ms ease-in 800ms;
+        margin-top: 0.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
