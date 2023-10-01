@@ -1,0 +1,385 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* make images easier to work with */
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+#wrapper,.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.left{
+    width:35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    background-image: url("./images/bg-main-desktop.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.front,.back{
+    width:100%;
+    height: 30%;
+    border-radius: 10px;
+    z-index: 2;
+    
+}
+.cardDetails{
+    width:70%;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.front{
+    background-image: url("./images/bg-card-front.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    translate: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:1rem 2rem;
+    color:white;
+}
+
+.ownerDetails{
+    display: flex;
+    justify-content: space-between;
+}
+.nameOnCard , .dateOC > span{
+    opacity: 0.8;
+}
+
+.biggerCircle{
+    width:2em;
+    height:2em;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.smallerCircle{
+    width:1.5em;
+    height:1.5em;
+    border-radius: 100%;
+    border:1px solid white
+}
+
+.circles{
+    display: flex;
+    align-items: flex-end;
+    gap:1em
+}
+.numberDetails{
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+}
+.back{
+    translate: 8rem;
+    position: relative;
+    background-image: url("./images/bg-card-back.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back>img{
+    width:100%;
+    height:100%
+}
+.cvvOnCard{
+    text-align: end;
+    width:70%;
+    margin: auto;
+}
+.cardContainer{
+    display:none;
+    flex-direction: column;
+    gap:1rem;
+    padding: 2rem;
+    border-radius: 20px;
+    width:50%;
+    max-width: 90%;
+    /* border: 2px solid black; */
+}
+input{
+    background-color: white;
+    border: 1px solid gray;
+    height:50%;
+    border-radius: 10px;
+    padding: 0.2rem 0.5rem;
+    
+}
+
+input:focus{
+    all:unset;
+    box-shadow: 0;
+    background-color: white;
+    border: 2px solid black;
+    height:50%;
+    border-radius: 10px;
+    padding: 0.2rem 0.5rem;
+
+}
+.others{
+    display: flex;
+    align-items: flex-end;
+}
+
+.date{
+    width:50%
+}
+.month{
+    width:45%;
+}
+.datesError{
+    opacity: 0;
+}
+.month:focus,.year:focus,.cvv:focus{
+    width:28%;
+}
+
+.year{
+    width:45%
+}
+
+.num:focus,.name:focus{
+    width:65.5%
+}
+.cvv{
+    width: 50%;
+
+}
+
+.name,.number{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem
+}
+
+.name>input,.number>input{
+    width:70%
+}
+.cardNum{
+    letter-spacing: 1.5;
+}
+
+.btn{
+    background-color: hsl(278, 68%, 11%);
+    color:white;
+    width:90%;
+    padding: 1rem 3rem;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: hsl(279, 6%, 55%);
+}
+.error{
+    display: none;
+    transition: display 0.3s;
+    font-size: small;
+    color:hsl(0, 100%, 66%)
+}
+
+.thankYouContainer{
+    display:none;
+    flex-direction: column;
+    gap:2rem;
+    padding: 2rem;
+    border-radius: 20px;
+    width:50%;
+    align-items: center;
+}
+.thankYouContainer img{
+    width:5rem
+}
+@media screen and (max-width:960px) {
+    #wrapper{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .left{
+        width:100%;
+        height:40%
+    }
+    .front,.back{
+        translate: 0;
+        width:65%;
+        height:55%
+    }
+    .front{
+        position: absolute;
+        height: 18%;
+        translate:-12% 60%;
+        z-index: 10;
+        padding: 1rem;
+        font-size: small;
+    }
+    .cardDetails{
+        height: 100%;
+        width:100%;
+        justify-self: flex-end;
+        align-self: center;
+        
+    }
+    .cardContainer{
+        height: 80%;
+        width: 100%;
+        justify-content: space-evenly;
+        border: none;   
+        padding: 0;
+    }
+    .date>h4, .cvv>h4{
+        margin-bottom: 1rem;
+    }
+    .date{
+        width:50%
+    }
+    .cvv{
+        width:50%
+    }
+    .month{
+        width:40%
+    }
+    .cardNum{
+        font-size: smaller;
+    }
+    .thankYouContainer{
+        height: 80%;
+        width: 100%;
+        margin: 5rem  0 0 0;
+        padding: 0;
+    }
+}
+/* 
+@media screen and (500px < width < 950px) {
+    #wrapper{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .left{
+        width:100%;
+        height:50%
+    }
+    .front,.back{
+        translate: 0;
+        width:65%;
+        height:50%
+    }
+    .front{
+        position: absolute;
+        height: 18%;
+        translate:-12% 80%;
+        z-index: 10;
+        padding: 1rem;
+        font-size: small;
+    }
+    .cardDetails{
+        height: 100%;
+        width:100%;
+        justify-self: flex-end;
+        align-self: center;
+        
+    }
+    .cardContainer{
+        height: 80%;
+        width: 100%;
+        justify-content: space-evenly;
+        border: none;   
+        padding: 0;
+    }
+    .date>h4, .cvv>h4{
+        margin-bottom: 1rem;
+    }
+    .date{
+        width:90%
+    }
+    .cvv{
+        width:60%
+    }
+    .month{
+        width:40%
+    }
+} */
+
+.active{
+    display: block;
+}
+
+.activeDates{
+    opacity: 1;
+}
+
+.activeContainer{
+    display: flex;
+}
