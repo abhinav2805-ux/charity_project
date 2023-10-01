@@ -1,0 +1,45 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 70%;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.imgAnim{
+    position: absolute;
+    width: 100%;
+    animation: 20s infinite linear scrollCompany;
+}
+
+.upper , .lower{
+    height: 15vh;
+    width: 100%;
+    background-image: linear-gradient(180deg,#f4f8ff,#fff0);
+    position: absolute;
+}
+.lower{
+    bottom: 0;
+    rotate: 180deg;
+}
+@keyframes scrollCompany{
+    0%{
+      top:0
+    }
+    100%{
+      top:-500%
+    }
+}
