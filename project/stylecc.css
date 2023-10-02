@@ -263,6 +263,7 @@ input:focus{
     }
     .container{
         flex-direction: column;
+
     }
     .left{
         width:100%;
@@ -383,3 +384,7 @@ input:focus{
 .activeContainer{
     display: flex;
 }
+
+/* .main{
+    background-color: black;
+} */
