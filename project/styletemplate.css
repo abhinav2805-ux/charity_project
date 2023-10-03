@@ -171,3 +171,46 @@ button:hover{
     top: 0;
   width: 100%;
 }
+
+.imgedu{
+    height: 300px;
+    width: 580px;
+}
+/* .imgfood{
+    height: 350px;
+    width: 500px;
+} */
+nav{
+    /* height: 1vh; */
+    background-color: black;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    gap: 1.5rem;
+}
+
+ul>li{
+    cursor: pointer;
+    transition: all 2s ease;
+}
+
+.underline{
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.1s ease-in;
+    border-radius: 5px;
+}
+
+ul>li:hover .underline{
+    width:100%
+    
+}
+nav,ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
