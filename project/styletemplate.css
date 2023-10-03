@@ -66,6 +66,7 @@ button{
 font-family: 'Merriweather', serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Poppins', sans-serif;
+padding-top: 150px;
 }
 
 button:hover{
@@ -100,12 +101,13 @@ button:hover{
 
 .lgDisplay{
     width:100vw;
-    background-color:rgba(134, 134, 191, 0.532) ;
+    /* background-color:rgba(134, 134, 191, 0.532) ; */
     display:flex;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem;  
     align-items: center;
     justify-content: space-around;
-    color:white
+    font-size: 25px;
+    background-color: white;
 }
 
 .lgList{
@@ -113,8 +115,8 @@ button:hover{
     display: flex;
     justify-content: space-between;
     width: 30%;
-    color: white;
-    gap:0.5rem
+    color: black;
+    gap:0.5rem;
 }
 
 .lgList li{
@@ -124,10 +126,10 @@ button:hover{
     border-radius: 10px;
 }
 
-.lgList li:hover{
-    background-color: white;
-    color:black;
-}
+ .lgList li:hover{
+    background-color: black;
+    color:white;
+} 
 .toggleBtn{
     display: none;
 }
@@ -150,6 +152,7 @@ button:hover{
         height: 6vh;
         background-color: rgb(127, 127, 156);
         transition: height 700ms ease-in;
+       
     }
     .smDisplay{
         list-style: none;
@@ -163,6 +166,8 @@ button:hover{
         align-items: center;
     }
 }
-.navlogo{
-    height: 100%;
+.container{
+    position: fixed;
+    top: 0;
+  width: 100%;
 }
