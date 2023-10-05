@@ -7,6 +7,10 @@
 body{
     overflow-x: hidden;
 }
+.about_text{
+    font-weight: 400;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
 
 .lgDisplay{
     width:100vw;
@@ -27,14 +31,14 @@ body{
     gap:0.5rem
 }
 
-.lgList li{
+.lgList li a{
     cursor: pointer;
     transition: all 0.5s ease;
     padding: 0.5rem 1rem;
     border-radius: 10px;
 }
 
-.lgList li:hover{
+.lgList li a:hover{
     background-color: white;
     color:black;
 }
@@ -44,20 +48,38 @@ body{
 .smDisplay{
     display: none;
 }
-
+.p{
+    font-size: 2rem;
+    color:white;
+    background-color:rgba(210, 132, 36, 0.7);
+    font-weight: 800;
+}
 #hero{
     width: 100%;
     position: relative;
-    background-color: green;
+    /* background-color: green; */
+    background-image: url("../front image/Picture1.jpg");
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 70vh;
     display: flex;
     align-items: center;
     padding-left: 4rem ;
     justify-content: flex-end;
 }
+.foot{
+    color: black;
+    text-decoration: none;
+    
+}
 
 .cont_main{
     width:40%;
+}
+.footer_main{
+    display: flex;
+   padding-left: 900px;
 }
 
 .overlay{
@@ -73,9 +95,13 @@ body{
     width: 0%;
 }
 
+.lgDisplay a img{
+    width: 9rem;
+}
+
 .btn{
     margin-top: 2rem;
-    background-color: white;
+    background-color: rgb(205, 49, 49);
     width: 20%;
     text-align: center;
     padding: 0.5rem 0;
@@ -139,7 +165,10 @@ footer{
     margin-bottom: 3rem;
     padding: 1rem 2rem;
 }
-
+.lgDisplay li a{
+    text-decoration: none;
+    color:white
+}
 .socials{
     display: flex;
     gap:1rem;

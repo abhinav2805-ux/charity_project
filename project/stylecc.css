@@ -388,3 +388,10 @@ input:focus{
 /* .main{
     background-color: black;
 } */
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}

@@ -114,13 +114,12 @@ button:hover{
 
 .lgDisplay{
     width:100vw;
-    /* background-color:rgba(134, 134, 191, 0.532) ; */
+    background-color:rgba(134, 134, 191, 0.532) ;
     display:flex;
-    padding: 1rem 2rem;  
+    padding: 1rem 2rem;
     align-items: center;
     justify-content: space-around;
-    font-size: 25px;
-    background-color: white;
+    color:white
 }
 
 .lgList{
@@ -128,8 +127,8 @@ button:hover{
     display: flex;
     justify-content: space-between;
     width: 30%;
-    color: black;
-    gap:0.5rem;
+    color: white;
+    gap:0.5rem
 }
 
 .lgList li{
@@ -139,13 +138,120 @@ button:hover{
     border-radius: 10px;
 }
 
- .lgList li:hover{
-    background-color: black;
-    color:white;
-} 
+.lgList li:hover{
+    background-color: white;
+    color:black;
+}
 .toggleBtn{
     display: none;
 }
+.smDisplay{
+    display: none;
+}
+
+#hero{
+    width: 100%;
+    position: relative;
+    background-color: green;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding-left: 4rem ;
+    justify-content: flex-end;
+}
+
+.cont_main{
+    width:40%;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(transparent,rgba(0, 0, 0, 0.811));
+    width: 100%;
+    transition: all 0.6s ease;
+}
+
+#hero:hover .overlay{
+    width: 0%;
+}
+
+.btn{
+    margin-top: 2rem;
+    background-color: white;
+    width: 20%;
+    text-align: center;
+    padding: 0.5rem 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+#about{
+    background-color: bisque;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about_text{
+    width: 40%;
+}
+
+.pic_bg{
+    width: 450px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.559);
+    transform: translate(-1rem,1rem);
+    z-index: -1;
+    position: absolute;
+}
+.img{
+    width: 450px;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    width:100%;
+    padding: 1rem 3rem;
+    text-align: center;
+}
+.navigations ul{
+    list-style: none;
+}
+
+.navigations ul li:not(:nth-child(1)){
+    margin-top: 1rem;
+}
+
+.footer_main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 3rem;
+    padding: 1rem 2rem;
+}
+
+.socials{
+    display: flex;
+    gap:1rem;
+}
+.smDisplay{
+    display: none;
+}
+
 @media screen and (max-width:600px) {
     .toggleBtn{
         display: block;
@@ -165,7 +271,6 @@ button:hover{
         height: 6vh;
         background-color: rgb(127, 127, 156);
         transition: height 700ms ease-in;
-       
     }
     .smDisplay{
         list-style: none;
@@ -179,51 +284,10 @@ button:hover{
         align-items: center;
     }
 }
-.container{
-    position: fixed;
-    top: 0;
-  width: 100%;
-}
-
-.imgedu{
-    height: 300px;
-    width: 580px;
-}
-/* .imgfood{
-    height: 350px;
-    width: 500px;
-} */
-/* nav{
-    height: 1vh;
-    background-color: black;
-    color: white;
-} */
-
-ul{
-    list-style: none;
-    gap: 1.5rem;
-}
-
-ul>li{
-    cursor: pointer;
-    transition: all 2s ease;
-}
-
-.underline{
-    width: 0%;
-    height: 2px;
-    background-color: white;
-    transition: all 0.1s ease-in;
-    border-radius: 5px;
-}
-
-ul>li:hover .underline{
-    width:100%
-    
-}
-nav,ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 3rem;
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
 }

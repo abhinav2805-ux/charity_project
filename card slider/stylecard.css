@@ -12,6 +12,7 @@
 }
 
 .carousel {
+    color: black !important;
     width: 90vw;
     text-align: center;
 }
