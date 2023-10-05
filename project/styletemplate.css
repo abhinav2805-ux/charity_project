@@ -5,8 +5,9 @@ body{
     height: 100%;
     background: rgb(129,221,216);
     background: linear-gradient(180deg, rgb(8, 178, 212) 0%, rgba(250,251,252,1) 50%, rgb(8,178,216,1) 100%);
+    
 }
-.img{
+.imgedu,.img{
     width: 50%;
     padding-top: 30px;
     height: auto;
@@ -23,9 +24,11 @@ img{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5px 0px 20px; 
+    padding: 1.3rem 0rem 0rem 1.3rem; 
     font-size: 20px;
-    height: 50vh;   
+    height: auto;   
+    overflow: hidden;
+    line-height: 1.5;
   
 }
 
@@ -33,13 +36,15 @@ img{
 .abhi{
     height: auto;
     display: flex;
+    padding: 1re;
 }
 button{
-    padding: 25px 30px 50px 30px;
-     width: auto;
-     height: 55px;
-     font-size: x-large;
-     font-weight: bold;
+    padding: 1.2rem 2rem;
+    width: auto;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 2rem;
+    transition: all 0.2s ease;
      
 }
 .don{
@@ -50,11 +55,13 @@ button{
     padding-bottom: 150px;
 }
 
-.abhirev{
+/* .abhirev{
     display: flex;
     flex-direction: row-reverse;
     height: auto;
-}
+    margin: 0;
+    padding: 0;
+} */
 
 .main{
     height: auto;
