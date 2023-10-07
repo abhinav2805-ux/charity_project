@@ -164,7 +164,7 @@ footer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin-bottom: 3rem;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
 }
 .lgDisplay li a{
     text-decoration: none;
