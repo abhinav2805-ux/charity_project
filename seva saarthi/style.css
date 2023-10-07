@@ -8,14 +8,15 @@ body{
     overflow-x: hidden;
 }
 .about_text{
+    font: italic;
     font-size:x-large;
-    font-weight: 100;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-weight: 95;
+    font-family:aptos; 
 }
 
 .lgDisplay{
     width:100vw;
-    background-color:rgba(134, 134, 191, 0.532) ;
+    background-color:rgba(153, 153, 165, 0.532) ;
     display:flex;
     padding: 1rem 2rem;
     align-items: center;
@@ -50,9 +51,10 @@ body{
     display: none;
 }
 .p{
-    font-size: 2rem;
+    font-family:bahnschrift;
+    font-size: 1.5rem;
     color:white;
-    background-color:rgba(210, 132, 36, 0.7);
+    background-color:rgba(240, 193, 135, 0.7);
     font-weight: 800;
 }
 #hero{

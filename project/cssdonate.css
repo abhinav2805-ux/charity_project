@@ -58,8 +58,9 @@ section {
 
 /* Style the footer */
 footer {
+    opacity: 0.75;
     text-align: center;
-    padding: 10px;
-    background-color: #333;
+    padding: 12px;
+    background-color: #000000;
     color: #fff;
 }
